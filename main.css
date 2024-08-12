@@ -1,0 +1,334 @@
+/*
+	Site created by Chantal Gratton
+*/
+
+/* Universals */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Zilla Slab', serif;
+  /*border: 1px solid rgba(0, 0, 0, 0.3);  reveals the invisible boxes around all elements on the page */
+}
+
+
+/* --- Header ----------------------------------------- */
+
+.header { 
+  display: block;
+  width: 100%;
+  height: 3em;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  margin: 0 0 2em;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  align-items: middle;
+  text-align: center;
+}
+
+#name {
+  width:20%;
+  float:left;
+  color: #FFFFFF;
+  text-align: center;
+  margin: auto;
+  font-size: 2em;
+  padding: 0.2em;
+}
+
+#navigation {
+  float:right;
+}
+
+#head{
+  width: 100%;
+  height: 5em;
+  background: url(images/back_7.jpg) no-repeat top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/* --- Body ----------------------------------------- */
+
+#headshot {
+  width:14em;
+  border: double;
+  position: center;
+}
+
+.left {
+  float: left;
+  width: 50%;
+}
+
+.right {
+  float: right;
+  width: 50%;
+}
+
+#publications p{
+  margin: 1em 1em;
+}
+
+.entry {
+  height: auto;
+  margin: 1em;
+}
+
+.year {
+  float: left;
+  width: 10%;
+  color: #FFFFFF;
+}
+
+.title {
+  width: 90%;
+  height: auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+#news p{
+  margin: 1em 1em;
+}
+
+/* Wrap sections */
+
+.wrap{
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  left: 0;
+  position: relative;
+  box-sizing: border-box;
+  left: 0;
+  padding: 2rem 2rem;
+}
+
+.wrap ul{
+  padding: 0rem 0rem 0rem 2rem;
+}
+
+.spost h3, .cpost h3{
+  color: #FFFFFF;
+}
+
+/* Solid wrap sections */
+
+.solid {
+	background-color: #1C2833;
+	color: #c4c4c4;
+}
+
+.spost {
+  color: #c4c4c4;
+  padding: 1em;
+}
+
+/* Solid wrap sections */
+
+.clear {
+	background: url(images/back_7.jpg) no-repeat top;
+	background-size: cover;
+	background-attachment: fixed;
+  width: 100%;
+}
+
+.cpost {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #c4c4c4;
+  padding: 1em;
+}
+
+/* --- Footer ----------------------------------------- */
+
+#footer
+{
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 1em 0;
+  font-size: 0.8em;
+  color: #c4c4c4;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* --- Event table ----------------------------------------- */
+
+.event-table{
+	display: block;
+	width:100%;
+}
+
+
+.event-table-col{
+	width:33.333333333333%;
+	padding:15px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.event-table-header{
+	 text-align:center;
+	 color:#FFFFFF;
+   font-size: 1.2em;
+}
+.event-table-body{
+	 text-align:center;
+	 color:#c4c4c4;
+   font-size: 1em;
+}
+
+/* --- Research table ----------------------------------------- */
+
+.research-table{
+  display: block;
+  width:100%;
+}
+
+.research-table-col{
+  width:50%;
+  padding:15px;
+}
+
+.research-table-header{
+   text-align:left;
+   color:#FFFFFF;
+   font-size: 1.2em;
+   font-weight: 100;
+}
+.research-table-body{
+   font-family: 'Raleway', sans-serif;
+   text-align:left;
+   color:#c4c4c4;
+   font-size: 1em;
+}
+
+.hidden{
+  visibility: hidden;
+  display: none;
+}
+
+/* --- Head table ----------------------------------------- */
+
+.head-table{
+  display: block;
+  width:100%;
+}
+
+.head-table-col{
+  padding:15px;
+}
+
+.head-table-header{
+   text-align:left;
+   color:#c4c4c4;
+   font-size: 1.2em;
+   font-weight: 200;
+}
+.head-table-body{
+   font-family: 'Raleway', sans-serif;
+   text-align:left;
+   color:#c4c4c4;
+   font-size: 1em;
+}
+
+/* --- navigation ----------------------------------------- */
+#navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 3em;
+  font-size: 1em;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#navigation ul li {
+  float:left;
+  display: inline-block;
+  line-height: normal;
+}
+
+#navigation ul li a {
+  color:#fff;
+  display:block;
+  text-decoration:none;
+  width: 8em;
+  height: 3em;
+  text-align: center;
+  padding: 1em;
+}
+
+#navigation ul li a:link, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+#navigation ul li a:hover, a:active {
+  background-color: #fff;
+  color: #000;
+}
+
+#navigation ul li a.selected {
+  color:#000;
+  background:#fff;
+}
+
+
+/* --- Other ----------------------------------------- */
+
+/*
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+*/
+
+div {
+  align-items: center;
+}
+
+p {
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+}
+
+p i {
+  font-style: italic;
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration:none;
+  color: #FFFFFF;
+}
+
+li {
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;  
+}
+
+h1{
+  font-weight: 100;
+  color: #FFFFFF; 
+  display: inline;
+}
+
+h2{
+  font-weight: 200;
+  color: #FFFFFF;
+  display: inline;
+}
+
+h3{
+  color: #FFFFFF;
+  font-weight: 100;
+  font-size: 1.3em;
+  display: inline;
+}
